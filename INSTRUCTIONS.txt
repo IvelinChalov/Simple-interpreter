@@ -1,0 +1,101 @@
+	INSTRUCTIONS
+
+1. How to run the program
+-------------------------
+	To start the program, first copy the "Simple interpreter.jar" file somewhere on your PC then follow the following steps.
+	!!!(Follow these steps only if you have "java JDK" installed on your PC, if not, please install  java JDK)
+		-Press "shift" + "right click" in the "Simple interpreter.jar" folder
+		-From the menu, choose "Open command window here"
+		-Go to the the command prompt
+                -Type "java -jar Simple interpreter.jar"
+		-You are good to go :)
+
+2. Dictionary of the program
+------------------------------
+
+	2.1. Start and end of the program
+	---------------------------------
+
+		 Simple interpreter    | Equivalent in other languages | Description
+		---------------------------------------------------------------------------------------
+			go	       |	-----------            | Every program begins with "go"	
+			finish         |        -----------	       | Every program ends with "finish"
+		----------------------------------------------------------------------------------------
+
+
+	2.2. Arithmetic operators
+	------------------------
+
+		Simple interpreter    | Equivalent in other languages | Description
+		----------------------------------------------------------------------------------------
+			+	      |	     	   +		      | Adding operator	
+			-	      |      	   -		      | Substracting operator
+			*	      |	     	   *		      | Multiplication operator	
+			/	      |      	   /		      | Division operator
+		----------------------------------------------------------------------------------------
+
+
+	2.3 Decision and loop operators
+	-------------------------------
+
+		Simple interpreter    | Equivalent in other languages | Description
+		----------------------------------------------------------------------------------------
+			ako	      |	     	   if		      | Decision	
+			inache	      |      	   else		      | Decision
+			dokato	      |	     	   while	      | Loop
+		----------------------------------------------------------------------------------------
+
+
+	2.4. Relational Operators
+	-------------------------
+
+		Simple interpreter    | Equivalent in other languages | Description
+		----------------------------------------------------------------------------------------
+			]	      |	     	   >		      | Greater than	
+			[	      |      	   <		      | Less than
+			=	      |	     	   ==		      | Equal to
+		----------------------------------------------------------------------------------------
+
+
+	2.5. Other operators
+	-----------------------
+
+		Simple interpreter    | Equivalent in other languages | Description
+		----------------------------------------------------------------------------------------
+			:=	      |	     	   := or =	      | Assignment Operator	
+			<	      |      	   {		      | Open section
+			>	      |	     	   }		      | Close section
+			#	      |	     	   ;		      | End of the line
+		----------------------------------------------------------------------------------------
+
+
+3. Examples
+-----------
+
+	3.1. Decision operator
+	----------------------
+
+		go
+		 a:= 0#
+		 ako(a ] 0) <
+		 	a:=5#
+		 >inache<
+		 	a:=6#
+		 >
+		finish
+
+	3.2. Loop
+	---------
+		go
+		 a:= 6#
+		 b:=0#
+		 dokato (a ] 0 ) <
+		   b:= b + 1#
+		   ako(a [ 3) <
+		     b :=  b * 2#
+		   >inache <
+		     b := 0#
+		   >#  <--important to put it
+		  a:=a - 1#
+		 >
+		finish
